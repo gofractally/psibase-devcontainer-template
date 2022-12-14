@@ -3,8 +3,8 @@
     "version": "0.1.0",
     "name": "Psibase",
     "description": "Develop Psibase web-services in C++ or Rust. 🌐 about.psibase.io 🌐",
-    "documentationURL": "about.psibase.io", // TODO: Replace with link to this template github repo
-    "licenseURL": "",	                    // TODO: Replace with link to the license file on the github repo
+    "documentationURL": "https://github.com/gofractally/psibase-devcontainer-template",
+    "licenseURL": "https://github.com/gofractally/psibase-devcontainer-template/blob/main/LICENSE",
     "options": {
         "psinodeLocation": {
             "type": "string",
