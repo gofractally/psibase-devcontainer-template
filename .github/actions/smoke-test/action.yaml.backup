@@ -1,0 +1,17 @@
+name: 'Template builder'
+inputs:
+  template:
+    description: 'Template to build'
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Checkout main
+      id: checkout_release
+      uses: actions/checkout@v2
+
+    - name: Build template
+      id: build_template
+      shell: bash
+      run: ${{ github.action_path }}/build.sh ${{ inputs.template }}

@@ -1,0 +1,19 @@
+{
+    "id": "psibase",
+    "version": "0.1.0",
+    "name": "Psibase",
+    "description": "Develop Psibase web-services in C++ or Rust. 🌐 about.psibase.io 🌐",
+    "documentationURL": "about.psibase.io", // TODO: Replace with link to this template github repo
+    "licenseURL": "",	                    // TODO: Replace with link to the license file on the github repo
+    "options": {
+        "psinodeLocation": {
+            "type": "string",
+            "description": "Where is the Psinode to which you are connecting?",
+            "proposals": ["Psidekick", "SpecifyManually"],
+            "default": "Psidekick"
+        }
+    },
+    "platforms": ["Any"],
+    "publisher": "James Mart",
+    "keywords": ["psibase","web3", "blockchain", "services"]
+}
