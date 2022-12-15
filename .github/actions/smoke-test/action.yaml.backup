@@ -1,7 +1,7 @@
-name: 'Template builder'
+name: 'Smoke test'
 inputs:
   template:
-    description: 'Template to build'
+    description: 'Template to test'
     required: true
 
 runs:
@@ -15,3 +15,8 @@ runs:
       id: build_template
       shell: bash
       run: ${{ github.action_path }}/build.sh ${{ inputs.template }}
+
+    - name: Test template
+      id: test_template
+      shell: bash
+      run: ${{ github.action_path }}/test.sh  ${{ inputs.template }}

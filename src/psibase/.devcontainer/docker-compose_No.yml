@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  code:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    user: root
+    container_name: psidekick-code
+    command: sleep infinity
+    volumes:
+      - type: volume
+        source: code-volume
+        target: /root
+      - ../artifacts:/root/projects/artifacts/
+
+volumes:
+  code-volume:

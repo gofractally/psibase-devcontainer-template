@@ -6,11 +6,11 @@
     "documentationURL": "https://github.com/gofractally/psibase-devcontainer-template",
     "licenseURL": "https://github.com/gofractally/psibase-devcontainer-template/blob/main/LICENSE",
     "options": {
-        "psinodeLocation": {
+        "usingPsidekick": {
             "type": "string",
-            "description": "Where is the Psinode to which you are connecting?",
-            "proposals": ["Psidekick", "SpecifyManually"],
-            "default": "Psidekick"
+            "description": "Will you deploy services to the Psidekick Docker extension? If yes, you must install Psidekick before you build this devcontainer.",
+            "proposals": ["Yes", "No"],
+            "default": "Yes"
         }
     },
     "platforms": ["Any"],

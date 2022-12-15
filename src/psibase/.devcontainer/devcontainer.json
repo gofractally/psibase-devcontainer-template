@@ -1,6 +1,6 @@
 {
     "name": "${localWorkspaceFolderBasename}",
-    "dockerComposeFile": "./docker-compose.yml",
+    "dockerComposeFile": "./docker-compose_${templateOption:usingPsidekick}.yml",
     "service": "code",
     "workspaceFolder": "/root/projects",
     "extensions": [
