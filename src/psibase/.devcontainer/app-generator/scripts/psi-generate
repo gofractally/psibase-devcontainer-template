@@ -11,10 +11,10 @@ do
             choice=1
             break;
             ;;
-        "Applet")
-            choice=2
-            break
-            ;;
+        # "Applet")
+        #     choice=2
+        #     break
+        #     ;;
         "Quit")
             choice=3
             break
