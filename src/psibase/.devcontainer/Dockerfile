@@ -36,10 +36,10 @@ RUN export DEBIAN_FRONTEND=noninteractive   \
 
 # Psidk
 WORKDIR /root/deps
-RUN wget https://github.com/gofractally/psibase/releases/download/rolling-release/psidk-linux.tar.gz \
-    && tar xf psidk-linux.tar.gz         \
-    && rm psidk-linux.tar.gz
-ENV PSIDK_PREFIX=/root/deps/psidk
+RUN wget https://github.com/gofractally/psibase/releases/download/rolling-release/psidk-ubuntu-2004.tar.gz \
+    && tar xf psidk-ubuntu-2004.tar.gz         \
+    && rm psidk-ubuntu-2004.tar.gz
+ENV PSIDK_PREFIX=/root/deps/psidk-ubuntu-2004
 ENV WASI_SDK_PREFIX=/opt/wasi-sdk-14.0
 ENV PATH=$PSIDK_PREFIX/bin:$WASI_SDK_PREFIX/bin:/root/app-generator/scripts:$PATH
 

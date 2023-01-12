@@ -8,7 +8,7 @@
     "options": {
         "usingPsidekick": {
             "type": "string",
-            "description": "Will you deploy services to the Psidekick Docker extension? (If yes, you must install Psidekick now)",
+            "description": "Will you deploy services to the Psidekick Docker extension? (If yes, you must pre-install Psidekick)",
             "proposals": ["Yes", "No"],
             "default": "Yes"
         }
