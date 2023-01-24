@@ -35,8 +35,3 @@ When you're ready to deploy your project, follow the deployment instructions fou
 When VSCode closes, the container stops. The data within the container is not accessible, as it's stored in an unnamed volume mounted on your PC, only accessible through the docker container launched by VSCode.
 
 All changes made within the container will persist on your PC (as long as you don't delete the docker volume), and must be pushed to a git repository if you want to work on it on another PC.
-
-# Updating this template
-
-When you update this template, remember to change the version number in devcontainer-template.json.
-Github CI/CD should automatically generate new artifacts for this template and PR them to the relevant repository used by the Dev Containers extension.
