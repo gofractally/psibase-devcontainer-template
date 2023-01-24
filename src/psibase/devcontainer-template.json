@@ -1,6 +1,6 @@
 {
     "id": "psibase",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "name": "Psibase",
     "description": "Develop Psibase web-services in C++ or Rust. 🌐 about.psibase.io 🌐",
     "documentationURL": "https://github.com/gofractally/psibase-devcontainer-template",
