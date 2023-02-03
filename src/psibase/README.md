@@ -35,3 +35,16 @@ When you're ready to deploy your project, follow the deployment instructions fou
 When VSCode closes, the container stops. The data within the container is not accessible, as it's stored in an unnamed volume mounted on your PC, only accessible through the docker container launched by VSCode.
 
 All changes made within the container will persist on your PC (as long as you don't delete the docker volume), and must be pushed to a git repository if you want to work on it on another PC.
+
+## Windows troubleshooting
+
+If you're on Windows, using Docker Desktop with WSL2, it is likely that the WSL2 process will chew up an enormous amount of memory on your PC. The solution is simply to:
+1. Shut down docker desktop
+2. Run `wsl --shutdown` from a command prompt
+3. Create a `.wslconfig` file in `%userprofile%` if it doesn't exist
+4. Add the following config to the `.wslconfig` file
+```
+[wsl2]
+memory=6GB
+```
+5. That's it. Save the file and restart Docker Desktop, and now WSL2 is limited to only consume a maximuim of 6GB.
